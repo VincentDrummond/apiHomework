@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GT News</title>
+
+<!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=VT323&display=swap" rel="stylesheet"> 
+
+<!-- STYLE -->
+    <!-- Desktop -->
+    <link rel="stylesheet" href="week8_database_api_desktop.css">
+    <!-- Mobile -->
+    <link rel="stylesheet" media="screen and (max-width: 715px)" href="week8_database_api_mobile.css">
+    
+<!-- SCRIPT -->
+    <script src="week8_database_api.js" type="module" defer></script>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="head">
+            <div class="masthead">
+                <span class="mastheadText">GroupThink</span>NEWS
+                <img src="/Week 8 Homework Task (Database API)/balance.png"/>
+            </div>
+            <div class="secondhead">Confirming your bias since 1980</div>
+        </div>
+
+        <main class="main newsCell">
+            <div class="mainDate">
+                <div class="mainHead">BREAKING NEWS</div>
+                <div class="datetime">
+                    <span id="datestamp"></span>
+                    <span id="timestamp"></span>
+                </div>
+            </div>
+
+            <div id="breakingNews" class="breakingNewsClass"></div>
+        </main>
+
+        <div class="sidebar newsCell">
+            <div class="sideHead">The Side Story</div>
+            <div class="sideNews">inject API here</div>
+        </div>
+
+        <div class="contentOne newsCell">
+            <div class="contentOneHead">Entertaiment</div>
+            <div class="contentOneNews">inject API here</div>
+        </div>
+
+        <div class="contentTwo newsCell">
+            <div class="contentTwoHead">Sport</div>
+            <div class="contentTwoNews">inject API here</div>
+        </div>
+
+        <div class="contentThree newsCell">
+            <div class="contentThreeHead">Health</div>
+            <div class="contentThreeNews">inject API here</div>
+        </div>
+        <footer>
+            <p>
+                Design &amp; Layout by Vincent Drummond; a human front-end developer.
+                No Javascript was harmed during the making of this dashboard. However some APIs may have been forcibly coerced. Everything you read is true. Do not doubt. Do not question. API data from <a href="https://gnews.io">gnews.io</a>
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>

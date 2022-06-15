@@ -1,0 +1,175 @@
+/* MOBILE CSS */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --wf-FNltred: #ac3b30;
+    --wf-FNgrey: #a9a9a9;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Athiti', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
+    grid-template-areas:
+        "h1 h1 h1 h1"
+        "sidebar main main main"
+        "sidebar contentOne contentTwo contentThree"
+        "sidebar footer footer footer";
+    grid-gap: 7px;
+    /* padding: 5px; */
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: h1;
+    padding: 10px;
+    color: var(--wf-FNltred);
+    font-weight: 600;
+}
+
+.mainDate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mainHead,
+.sideHead,
+.contentOneHead,
+.contentTwoHead,
+.contentThreeHead {
+    display: flex;
+    /* align-content: center; */
+    background-color: var(--wf-FNltred);
+    padding-left: 10px;
+    color:#fff;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.mainHead {
+    width: 50%;
+}
+
+.datetime {
+    display: flex;
+    border: 2px solid var(--wf-FNltred);
+    width: 50%;
+    color: var(--wf-FNltred);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+#datestamp {
+    width: 75%;
+    text-align: right;
+}
+
+#timestamp {
+    width: 25%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.mainHead span {
+    color: var(--wf-FNltred);
+    background-color: #fff;
+}
+
+.masthead {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+    color: #000;
+    padding-top: 35px;
+}
+
+.mastheadText {
+    color: var(--wf-FNltred);
+}
+
+.secondhead {
+    font-size: 0.8rem;
+}
+
+
+main {
+    grid-area: main;
+    padding: 10px;
+}
+
+img {
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -15px;
+}
+
+.newsCell {
+    border: 2px black solid;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding: 10px;
+}
+
+.contentOne {
+    grid-area: contentOne;
+    padding: 10px;
+}
+
+.contentTwo {
+    grid-area: contentTwo;
+    padding: 10px;
+}
+
+.contentThree {
+    grid-area: contentThree;
+    padding: 10px;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.5rem;
+    background-color: var(--wf-FNltred);
+    color: #fff;
+}
+
+
+@media screen and (max-width:600px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 2.2fr 0.4fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas:
+            "h1"
+            "main"
+            "sidebar"
+            "contentOne"
+            "contentTwo"
+            "contentThree"
+            "footer";
+    }
+}
